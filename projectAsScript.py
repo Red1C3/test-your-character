@@ -507,7 +507,7 @@ class Fictional(KnowledgeEngine):
     def isRobin(self):
         printAndHalt(self,"He's Robin Hood")
 
-        class Marvel(KnowledgeEngine):
+class Marvel(KnowledgeEngine):
     @Rule(NOT(Fact(black=W())))
     def isBlack(self):
         self.declare(Fact(black=getInput("Does your character has a black hair?")))
